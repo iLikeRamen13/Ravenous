@@ -1,20 +1,13 @@
-// Imports 
-import Business from "../Business/Business";
-import './BusinessList.css';
+import Business from '../Business/Business.jsx';
 
-// Define the business list component
-function BusinessList() {
-    return (
-        <div className="BusinessList">
-            <Business />
-            <Business />
-            <Business />
-            <Business />
-            <Business />
-            <Business />
-        </div>
-    );
+function BusinessList({ businesses }) {
+  return (
+    <div className="BusinessList">
+      {businesses.map(business => (
+        <Business business={business} key={business.id} />
+      ))}
+    </div>
+  );
 }
 
-// Export
-export default BusinessList;    
+export default BusinessList;
