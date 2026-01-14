@@ -1,5 +1,7 @@
+// Imports
 import './Searchbar.css'
 
+// Define the searchbar component
 function Searchbar() {
     return (
         <div className="Searchbar">
@@ -11,4 +13,5 @@ function Searchbar() {
     )
 }
 
+// Export
 export default Searchbar;
