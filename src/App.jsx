@@ -39,6 +39,7 @@ const businesses = [
       rating: 4.3,
       reviewCount: 204
   }
+  
 ]
 
 
@@ -46,11 +47,20 @@ const businesses = [
 function App() {
   return (
     <div>
-      <Searchbar />
+      <div className='header'>
+      <div className='content'>
+        <h1>Ravenous</h1>
+        <Searchbar />
+     </div>
+      </div>
       <br />
-      <BusinessList businesses={businesses} />
-      <BusinessList businesses={businesses} />
+      
+      <div className='cards'>
+        <BusinessList businesses={businesses} />
+        <BusinessList businesses={businesses} />
+        </div>
     </div>
+
   )
 }
 
