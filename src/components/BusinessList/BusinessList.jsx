@@ -4,7 +4,7 @@ function BusinessList({ businesses }) {
   return (
     <div className="BusinessList">
       {businesses.map(business => (
-        <Business business={business} />
+        <Business key={business.id} business={business} />
       ))}
     </div>
   );
